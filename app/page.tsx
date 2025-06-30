@@ -232,9 +232,7 @@ export default function JoinTeamPage() {
                       </div>
                       Competition Rules & Regulations
                     </CardTitle>
-                    <CardDescription className="text-base text-gray-600 dark:text-gray-300">
-                      Real-Time Coding Platform Competition Rules
-                    </CardDescription>
+
                   </CardHeader>
                   <CardContent className="overflow-y-auto max-h-[600px] space-y-6 px-6 pb-6 custom-scroll-hide">
                     {/* Rule 0 - Language & Submission Format */}
