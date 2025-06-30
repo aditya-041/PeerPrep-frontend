@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        border: '#e5e7eb', // or whatever value you want
-        ring: '#93c5fd',
+        background: '#f9fafb', // Add this to support `bg-background`
+        border: '#e5e7eb',     // Already present
+        ring: '#93c5fd',       // Already present
       }
     }
   },
