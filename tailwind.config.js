@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#f9fafb',  // for bg-background
-        foreground: '#111827',  // for text-foreground (you can customize)
-        border: '#e5e7eb',
-        ring: '#93c5fd',
+        background: "hsl(var(--background) / <alpha-value>)",
+        foreground: "hsl(var(--foreground) / <alpha-value>)",
+        border: "hsl(var(--border) / <alpha-value>)",
+        ring: "hsl(var(--ring) / <alpha-value>)",
       }
     }
   },
-  plugins: []
-}
+  plugins: [require("tailwindcss-animate")]
+};
