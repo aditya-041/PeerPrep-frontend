@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#f9fafb', // Add this to support `bg-background`
-        border: '#e5e7eb',     // Already present
-        ring: '#93c5fd',       // Already present
+        background: '#f9fafb',  // for bg-background
+        foreground: '#111827',  // for text-foreground (you can customize)
+        border: '#e5e7eb',
+        ring: '#93c5fd',
       }
     }
   },
