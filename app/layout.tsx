@@ -1,16 +1,17 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Fira_Code } from "next/font/google"
-import { ThemeProvider } from "@/components/ui/theme-provider"
+// import { ThemeProvider } from "@/components/ui/theme-provider"
+import { ThemeProvider } from "next-themes"
 import "./globals.css"
 
 const inter = Inter({
-  variable: "--font-geist-sans", // Keep your variable name if needed
+  variable: "--font-geist-sans",
   subsets: ["latin"],
 })
 
 const firaCode = Fira_Code({
-  variable: "--font-geist-mono", // Matching your old variable name
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 })
 
@@ -25,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="font-sans">
       <body className={`${inter.variable} ${firaCode.variable} antialiased`}>
-        <ThemeProvider defaultTheme="system" storageKey="competition-theme">
+        <ThemeProvider attribute="class" defaultTheme="system" storageKey="competition-theme">
           {children}
         </ThemeProvider>
       </body>
