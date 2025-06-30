@@ -251,6 +251,10 @@ export default function JoinTeamPage() {
                           Participants are required to write only the main logic function. There is no need to include
                           the <code className="font-mono">int main()</code> function.
                         </p>
+
+                        <p className="text-gray-700 dark:text-gray-300">
+                          There is also no need to include header files or use the 'using namespace std' directive.
+                        </p>
                       </div>
                     </div>
 
