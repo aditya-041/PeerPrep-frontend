@@ -4,6 +4,7 @@ import { Inter, Fira_Code } from "next/font/google"
 // import { ThemeProvider } from "@/components/ui/theme-provider"
 import { ThemeProvider } from "next-themes"
 import "./globals.css"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" storageKey="competition-theme">
           {children}
         </ThemeProvider>
+      <SpeedInsights/>
       </body>
     </html>
   )
