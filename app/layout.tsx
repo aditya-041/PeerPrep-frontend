@@ -30,11 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="font-sans">
       <body className={`${inter.variable} ${firaCode.variable} antialiased`}>
+        <Analytics />
         <ThemeProvider attribute="class" defaultTheme="system" storageKey="competition-theme">
           {children}
         </ThemeProvider>
-      <SpeedInsights/>
-      <Analytics/>
+        <SpeedInsights />
       </body>
     </html>
   )
